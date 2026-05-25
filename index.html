@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI赋能教师教学专题馆</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="研修网首页">
+        <img src="./素材/研修网logo.png" alt="研修网" />
+      </a>
+      <button class="topic-switch" type="button" aria-expanded="false" aria-controls="topicOverlay">
+        <img src="./素材/全部专题icon.png" alt="" />
+        <span>全部专题</span>
+      </button>
+      <nav class="nav" aria-label="专题导航">
+        <a class="active" href="#home">专题首页</a>
+        <a href="#path">能力路径</a>
+        <a href="#news">新闻通知</a>
+        <a href="#works">研修成果</a>
+        <a href="#cases">典型案例</a>
+        <a href="#experts">专家团队</a>
+      </nav>
+    </header>
+
+    <section class="topic-overlay" id="topicOverlay" aria-label="全部专题导航" aria-hidden="true">
+      <aside class="topic-side">
+        <div class="topic-side-title">
+          <img src="./素材/全部专题icon.png" alt="" />
+          <span>全部专题</span>
+        </div>
+        <button class="topic-cat active" type="button" data-topic-cat="recommend">
+          <span>推荐</span>
+          <em>HOT</em>
+        </button>
+        <button class="topic-cat" type="button" data-topic-cat="ai">AI与数字化教学</button>
+        <button class="topic-cat" type="button" data-topic-cat="teaching">学科教学与课堂改进</button>
+        <button class="topic-cat" type="button" data-topic-cat="research">教研科研与专业发展</button>
+        <button class="topic-cat" type="button" data-topic-cat="leadership">校园长领导力</button>
+        <button class="topic-cat" type="button" data-topic-cat="student">德育心理与学生发展</button>
+        <button class="topic-cat" type="button" data-topic-cat="evaluation">考试评价与质量监测</button>
+        <button class="topic-cat" type="button" data-topic-cat="preschool">学前教育与保育实践</button>
+        <button class="topic-cat" type="button" data-topic-cat="innovation">科学教育与跨学科创新</button>
+        <button class="topic-cat" type="button" data-topic-cat="service">直播与研修服务</button>
+      </aside>
+
+      <div class="topic-main">
+        <div class="topic-toolbar">
+          <div>
+            <p>按服务对象筛选</p>
+            <div class="audience-filters" aria-label="服务对象筛选">
+              <button class="audience active" type="button" data-audience="all">全部对象</button>
+              <button class="audience" type="button" data-audience="teacher">一线教师</button>
+              <button class="audience" type="button" data-audience="class-teacher">班主任</button>
+              <button class="audience" type="button" data-audience="leader">校园长</button>
+              <button class="audience" type="button" data-audience="researcher">教研员/培训者</button>
+              <button class="audience" type="button" data-audience="new-teacher">新任与骨干名优教师</button>
+              <button class="audience" type="button" data-audience="preschool">学前教师/园长</button>
+              <button class="audience" type="button" data-audience="support">督导/管理人员</button>
+              <button class="audience" type="button" data-audience="school">学校共同体</button>
+            </div>
+          </div>
+          <button class="topic-close" type="button" aria-label="关闭全部专题">×</button>
+        </div>
+
+        <div class="topic-grid" aria-live="polite">
+          <article class="topic-card featured show" data-cats="recommend ai teaching" data-audience="teacher researcher new-teacher school">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>AI赋能教师教学</h3>
+            <p>让AI成为教师的教学好帮手，覆盖备课、课堂互动、作业批改与学情分析。</p>
+            <div><span>一线教师</span><span>AI教学</span><span>数字素养</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend ai" data-audience="teacher leader researcher support">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>教师数字素养提升</h3>
+            <p>面向不同岗位建立数字化意识、工具应用、数据安全与智慧教育能力。</p>
+            <div><span>全员教师</span><span>校园长</span><span>信息化</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend teaching" data-audience="teacher new-teacher researcher">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>新课标学科教学</h3>
+            <p>围绕新课标、核心素养、单元整体教学与课堂改进开展专题研修。</p>
+            <div><span>学科教师</span><span>新课标</span><span>课堂改进</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend teaching resource" data-audience="teacher researcher new-teacher">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>单元整体教学设计</h3>
+            <p>从目标、任务、评价与资源整合入手，提升单元教学设计质量。</p>
+            <div><span>一线教师</span><span>教研组长</span><span>教学设计</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend research" data-audience="researcher teacher school">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>教育科研与课题指导</h3>
+            <p>支持课题申报、研究设计、过程指导、成果凝练与区域教研转化。</p>
+            <div><span>教研员</span><span>课题负责人</span><span>科研</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend leadership" data-audience="leader support school">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>校园长课程领导力</h3>
+            <p>聚焦学校治理、课程建设、集团化办学和依法治校履职能力。</p>
+            <div><span>校长</span><span>园长</span><span>中层干部</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend student" data-audience="class-teacher teacher leader">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>班主任与心理健康</h3>
+            <p>融合班级管理、心理健康、家校社协同、学生发展指导与师德师风。</p>
+            <div><span>班主任</span><span>德育队伍</span><span>心理健康</span></div>
+          </article>
+          <article class="topic-card show" data-cats="evaluation teaching" data-audience="teacher researcher support leader">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>命题评价与复习备考</h3>
+            <p>围绕命题质量、复习策略、学业测评与区域质量监测形成能力提升路径。</p>
+            <div><span>学科教师</span><span>教研员</span><span>评价</span></div>
+          </article>
+          <article class="topic-card show" data-cats="recommend preschool student" data-audience="preschool leader teacher">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>幼儿游戏观察与评价</h3>
+            <p>聚焦自主游戏、儿童观察评价、幼小衔接、保育实践和一日活动优化。</p>
+            <div><span>幼儿园教师</span><span>园长</span><span>保育员</span></div>
+          </article>
+          <article class="topic-card show" data-cats="innovation teaching" data-audience="teacher researcher new-teacher school">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>科学教育与跨学科学习</h3>
+            <p>覆盖科学素养、项目化学习、跨学科实践、劳动教育与拔尖创新培养。</p>
+            <div><span>学科教师</span><span>骨干教师</span><span>跨学科</span></div>
+          </article>
+          <article class="topic-card show" data-cats="research ai service" data-audience="school teacher researcher leader">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>手拉手协同教研</h3>
+            <p>支持结对帮扶、入校指导、课堂诊断、联研共创与学校共同体建设。</p>
+            <div><span>学校共同体</span><span>教研员</span><span>入校指导</span></div>
+          </article>
+          <article class="topic-card show" data-cats="service" data-audience="leader researcher support school">
+            <img src="./素材/全部专题配图.png" alt="" />
+            <h3>研直播与活动服务</h3>
+            <p>提供研直播、现场会、拍摄、图片直播、展示活动与研修运营支持。</p>
+            <div><span>管理者</span><span>教研机构</span><span>直播服务</span></div>
+          </article>
+        </div>
+
+        <p class="topic-empty">当前条件下暂无专题，请切换专题大类或服务对象。</p>
+      </div>
+    </section>
+
+    <main id="home">
+      <section class="hero" aria-label="专题馆主视觉">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <h1>
+              <span class="type-line" data-type="AI赋能教师教学·专题馆"></span>
+              <span class="type-line accent" data-type="让AI成为教师的教学好帮手"></span>
+            </h1>
+            <p>聚焦AI与课堂教学深度融合，提升教师数字素养与教学创新能力，汇聚国家级专家资源，推动区域协同教研，打造可复制推广的教师AI发展新范式。</p>
+
+            <div class="stats">
+              <article class="stat-card interactive-card">
+                <img src="./素材/累计教师icon.png" alt="" />
+                <strong data-count="12840">0</strong>
+                <span>累计参训教师</span>
+              </article>
+              <article class="stat-card interactive-card">
+                <img src="./素材/覆盖省份icon.png" alt="" />
+                <strong data-count="18">0</strong>
+                <span>覆盖省份</span>
+              </article>
+              <article class="stat-card interactive-card">
+                <img src="./素材/研修成果icon.png" alt="" />
+                <strong data-count="23102">0</strong>
+                <span>研修成果</span>
+              </article>
+            </div>
+
+            <div class="project-ticker" aria-label="最近项目">
+              <div class="ticker-window">
+                <div class="ticker-track">
+                  <span>2026年京沪穗三地协同大教研：AI赋能五育融合</span>
+                  <span>2026年京沪穗三地协同大教研：AI赋能五育融合</span>
+                </div>
+              </div>
+              <em>进行中</em>
+            </div>
+          </div>
+
+          <aside class="login-panel interactive-card">
+            <div class="online"><i></i><span>1238 名教师学习中</span></div>
+            <img class="mentor-avatar" src="./素材/默认头像.png" alt="教师头像" />
+            <button class="primary-btn" type="button">立即登录，开启研修之旅</button>
+          </aside>
+
+          <div class="quick-links">
+            <a class="interactive-card" href="#plan"><img src="./素材/实施方案icon.png" alt="" /><span>实施方案</span></a>
+            <a class="interactive-card" href="#assessment"><img src="./素材/考核评价icon.png" alt="" /><span>考核评价</span></a>
+            <a class="interactive-card" href="#schedule"><img src="./素材/研修安排icon.png" alt="" /><span>研修安排</span></a>
+            <a class="interactive-card" href="#guide"><img src="./素材/学习指南icon.png" alt="" /><span>学习指南</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="path" class="section path-section">
+        <h2 class="section-title">AI教师发展能力路径</h2>
+        <div class="path-grid">
+          <article class="path-card active interactive-card">
+            <div><span>STAGE 01</span><h3>AI认知</h3></div>
+            <img src="./素材/能力路径图1.png" alt="" />
+            <p>了解人工智能基本原理与核心概念，建立AI与教育融合的基本思维框架</p>
+          </article>
+          <article class="path-card interactive-card">
+            <div><span>STAGE 02</span><h3>AI工具应用</h3></div>
+            <img src="./素材/能力路径图2.png" alt="" />
+            <p>掌握主流AI教育工具，能够在备课、教案生成、资源制作中熟练使用</p>
+          </article>
+          <article class="path-card interactive-card">
+            <div><span>STAGE 03</span><h3>AI教学设计</h3></div>
+            <img src="./素材/能力路径图3.png" alt="" />
+            <p>运用AI辅助完成个性化、差异化教学方案设计，提升设计质量与效率</p>
+          </article>
+          <article class="path-card interactive-card">
+            <div><span>STAGE 04</span><h3>AI课堂融合</h3></div>
+            <img src="./素材/能力路径图4.png" alt="" />
+            <p>将AI工具深度嵌入课堂教学全流程，提升互动、反馈与学情诊断能力</p>
+          </article>
+          <article class="path-card interactive-card">
+            <div><span>STAGE 05</span><h3>AI教研创新</h3></div>
+            <img src="./素材/能力路径图5.png" alt="" />
+            <p>基于AI数据驱动教研改革，推动协同备课、集体教研的智能化转型</p>
+          </article>
+          <article class="path-card interactive-card">
+            <div><span>STAGE 06</span><h3>AI成果产出</h3></div>
+            <img src="./素材/能力路径图6.png" alt="" />
+            <p>产出可传播、可推广的AI教育实践成果，形成个人教学品牌与专业影响力</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" id="news">
+        <div class="panel news-panel">
+          <div class="panel-head">
+            <div class="tabs" role="tablist" aria-label="新闻类型">
+              <button class="tab active" type="button" data-news="all">全部</button>
+              <button class="tab" type="button" data-news="notice">通知公告</button>
+              <button class="tab" type="button" data-news="topic">主题新闻</button>
+            </div>
+            <button class="select-btn" type="button">全部培训批次</button>
+          </div>
+          <div class="news-content">
+            <article class="featured-news interactive-card" data-kind="topic">
+              <img src="./素材/主题新闻图1.png" alt="京沪穗三地协同大教研圆满落幕" />
+              <div>
+                <span>主题新闻</span>
+                <strong>京沪穗三地协同大教研圆满落幕，AI赋能五育融合创新成果正式发布</strong>
+                <time>2026-05-10</time>
+              </div>
+            </article>
+            <div class="news-list">
+              <article class="news-item" data-kind="notice"><span>通知公告</span><strong>关于2026年春季AI融合教学专题培训结业考核安排的通知</strong><time>2026-05-18</time></article>
+              <article class="news-item" data-kind="notice"><span>通知公告</span><strong>2026年暑期AI教师发展训练营报名通道现已正式开放</strong><time>2026-04-28</time></article>
+              <article class="news-item" data-kind="topic"><span>主题新闻</span><strong>AI课堂观察与五育融合专题工作坊在广州举行</strong><time>2026-04-18</time></article>
+              <article class="news-item" data-kind="notice"><span>通知公告</span><strong>第二批校本研修成果展示材料提交提醒</strong><time>2026-04-12</time></article>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel policy-panel">
+          <div class="title-row">
+            <h2 class="section-title">相关政策</h2>
+            <a href="#">更多政策 &gt;</a>
+          </div>
+          <article class="policy-card interactive-card">
+            <img src="./素材/相关政策icon.png" alt="" />
+            <div><h3>《教育部关于推进中小学人工智能教育的指导意见》</h3><p>教育部 · 2025年</p><span>人工智能+教育</span><span>教师发展</span></div>
+          </article>
+          <article class="policy-card interactive-card">
+            <img src="./素材/相关政策icon.png" alt="" />
+            <div><h3>《教师数字素养》教育行业标准（T/CESA）</h3><p>教育部 / 中国电子学会 · 2024年</p><span>数字素养</span><span>智慧教育</span></div>
+          </article>
+          <article class="policy-card interactive-card">
+            <img src="./素材/相关政策icon.png" alt="" />
+            <div><h3>中小学智慧课堂建设与应用指南</h3><p>教育技术中心 · 2024年</p><span>课堂融合</span><span>资源建设</span></div>
+          </article>
+        </aside>
+      </section>
+
+      <section class="works-section" id="works">
+        <div class="section-head">
+          <h2 class="section-title">研修成果展示</h2>
+          <a href="#">查看全部成果 &gt;</a>
+        </div>
+        <div class="filters" aria-label="成果筛选">
+          <button class="chip active" type="button">全部类型</button>
+          <button class="chip" type="button">教学设计</button>
+          <button class="chip" type="button">课件资源</button>
+          <button class="chip" type="button">课堂案例</button>
+          <button class="chip" type="button">教学反思</button>
+          <button class="chip" type="button">更多</button>
+          <button class="select-btn" type="button">全部培训批次</button>
+          <button class="select-btn" type="button">全部学段学科</button>
+        </div>
+        <div class="work-grid">
+          <article class="work-card interactive-card"><img src="./素材/成果图1.png" alt="" /><span>教学设计</span><h3>初中数学AI辅助个性化教学设计——以一元二次方程为例</h3><p>王雅琴 · 上海市徐汇区第三中学 <time>2026-05</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图2.png" alt="" /><span>课件资源</span><h3>AI赋能语文写作教学：ChatGPT辅助作文批改实践课件</h3><p>李建明 · 北京市朝阳区实验学校 <time>2026-04</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图3.png" alt="" /><span>课堂案例</span><h3>幼儿游戏观察AI记录工具使用实录（义乌示范课）</h3><p>陈晓燕 · 义乌市实验幼儿园 <time>2026-04</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图4.png" alt="" /><span>教学反思</span><h3>AI工具融入高中生物课堂的教学效果量化研究报告</h3><p>张伟华 · 广州市越秀区育才学校 <time>2026-03</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图5.png" alt="" /><span>教学设计</span><h3>AI辅助小学语文整本书阅读教学设计</h3><p>王雅琴 · 上海市徐汇区第三中学 <time>2026-05</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图6.png" alt="" /><span>课件资源</span><h3>AI赋能初中数学函数建模课件</h3><p>李建明 · 北京市朝阳区实验学校 <time>2026-04</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图7.png" alt="" /><span>课堂案例</span><h3>AI课堂互动在英语口语教学中的实践</h3><p>陈晓燕 · 义乌市实验幼儿园 <time>2026-04</time></p></article>
+          <article class="work-card interactive-card"><img src="./素材/成果图8.png" alt="" /><span>教学反思</span><h3>AI辅助幼儿游戏观察与评价记录</h3><p>张伟华 · 广州市越秀区育才学校 <time>2026-03</time></p></article>
+        </div>
+      </section>
+
+      <section class="dashboard-row">
+        <div class="panel map-panel">
+          <div class="panel-head compact">
+            <h2 class="section-title">专题全国培训热力图</h2>
+            <div class="tabs small">
+              <button class="tab active" type="button">全部</button>
+              <button class="tab" type="button">2026年</button>
+              <button class="tab" type="button">2025年</button>
+              <button class="tab" type="button">2024年</button>
+            </div>
+          </div>
+          <div class="map-body">
+            <img src="./素材/热力图.png" alt="全国培训热力图" />
+            <aside class="rank-card interactive-card">
+              <h3>省份 TOP5</h3>
+              <ol>
+                <li><span>广东</span><i style="--w: 100%"></i><b>5,281</b></li>
+                <li><span>浙江</span><i style="--w: 78%"></i><b>4,126</b></li>
+                <li><span>重庆</span><i style="--w: 67%"></i><b>3,562</b></li>
+                <li><span>江苏</span><i style="--w: 56%"></i><b>2,987</b></li>
+                <li><span>山东</span><i style="--w: 40%"></i><b>2,104</b></li>
+              </ol>
+            </aside>
+            <img class="training-distribution" src="./素材/参训对象分布.png" alt="参训对象分布" />
+          </div>
+        </div>
+
+        <aside class="panel feedback-panel" aria-label="学员反馈">
+          <h2 class="section-title">学员反馈</h2>
+          <div class="feedback-window">
+            <div class="feedback-track">
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多。</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来。</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好”。</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>案例库特别实用，数学建模、作文批改、幼儿观察都能找到可迁移的思路。</p><span><b>王老师</b> 义乌市实验幼儿园</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专家点评很具体，帮我快速发现课堂融合中的低效环节。</p><span><b>刘老师</b> 重庆市南岸区教师进修学院</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多。</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来。</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好”。</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="experts" class="panel experts-section">
+        <h2 class="section-title">专家团队</h2>
+        <div class="expert-grid">
+          <article class="expert-card interactive-card"><img class="photo" src="./素材/专家头像-周教授.png" alt="周教授头像" /><h3>周教授</h3><p>教育技术学教授｜AI教育应用与教师数字素养</p><span>AI教学设计</span><span>教师发展</span></article>
+          <article class="expert-card interactive-card"><img class="photo" src="./素材/专家头像-刘老师.png" alt="刘老师头像" /><h3>刘老师</h3><p>特级教师｜跨学科课堂创新与五育融合实践</p><span>课堂融合</span><span>课例打磨</span></article>
+          <article class="expert-card interactive-card"><img class="photo" src="./素材/专家头像-沈老师.png" alt="沈老师头像" /><h3>沈老师</h3><p>教研员｜区域教研组织与成果评价体系建设</p><span>区域教研</span><span>成果评价</span></article>
+          <article class="expert-card interactive-card"><img class="photo" src="./素材/专家头像-陈博士.png" alt="陈博士头像" /><h3>陈博士</h3><p>AI产品专家｜生成式AI工具应用与教学场景设计</p><span>AI工具</span><span>场景设计</span></article>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <img class="ribbon ribbon-left" src="./素材/底部丝带1.png" alt="" />
+        <img class="ribbon ribbon-right" src="./素材/底部丝带2.png" alt="" />
+        <h2><span class="type-line" data-type="与全国12,840+教师一起探索AI教学新未来"></span></h2>
+        <p>专业的教育解决方案、全面先进的产品帮您实现教育规划</p>
+        <form class="lead-form">
+          <input type="tel" placeholder="请输入您的手机号，与您取得联系" aria-label="手机号" />
+          <button type="submit">提交</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="links">相关链接：<a href="#">中国教师研修网</a><a href="#">教研网</a><a href="#">三人行</a><a href="#">研直播</a></div>
+      <div class="footer-main">
+        <div>
+          <img class="footer-logo" src="./素材/教师研修网logo.png" alt="中国教师研修网" />
+          <p>客服热线：400-7799-010</p>
+          <p>京ICP备06018303号-7　电信与信息服务业务许可证 京公网安备11010202007407号</p>
+          <p>Copyright©2020 ipx.yanxiu.com 中国教师研修网</p>
+        </div>
+        <figure>
+          <img src="./素材/教师研修网公众号.png" alt="研修网公众号" />
+          <figcaption>研修网公众号</figcaption>
+        </figure>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
