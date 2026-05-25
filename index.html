@@ -20,7 +20,7 @@
         <a href="#path">能力路径</a>
         <a href="#news">新闻通知</a>
         <a href="#works">研修成果</a>
-        <a href="#cases">典型案例</a>
+        <a href="#training-heat">培训热力</a>
         <a href="#experts">专家团队</a>
       </nav>
     </header>
@@ -309,7 +309,7 @@
         </div>
       </section>
 
-      <section class="dashboard-row">
+      <section class="dashboard-row" id="training-heat">
         <div class="panel map-panel">
           <div class="panel-head compact">
             <h2 class="section-title">专题全国培训热力图</h2>
@@ -321,7 +321,20 @@
             </div>
           </div>
           <div class="map-body">
-            <img src="./素材/热力图.png" alt="全国培训热力图" />
+            <div class="heatmap-shell" aria-label="全国省级培训热力图">
+              <svg class="china-heatmap" role="img" aria-labelledby="heatmapTitle heatmapDesc"></svg>
+              <div class="heatmap-controls" aria-label="地图缩放控制">
+                <button class="heatmap-zoom-button" type="button" data-map-zoom="in" aria-label="放大地图">+</button>
+                <button class="heatmap-zoom-button" type="button" data-map-zoom="out" aria-label="缩小地图">−</button>
+                <button class="heatmap-zoom-button reset" type="button" data-map-zoom="reset" aria-label="重置地图">1:1</button>
+              </div>
+              <div class="heatmap-tooltip" role="status" aria-live="polite"></div>
+              <div class="heatmap-legend" aria-hidden="true">
+                <span>低</span>
+                <i></i>
+                <span>高</span>
+              </div>
+            </div>
             <aside class="rank-card interactive-card">
               <h3>省份 TOP5</h3>
               <ol>
@@ -332,7 +345,19 @@
                 <li><span>山东</span><i style="--w: 40%"></i><b>2,104</b></li>
               </ol>
             </aside>
-            <img class="training-distribution" src="./素材/参训对象分布.png" alt="参训对象分布" />
+            <section class="training-distribution training-chart" aria-label="参训对象分布">
+              <h3>参训对象分布</h3>
+              <div class="donut-chart" role="img" aria-label="小学教师42%，幼儿教师27%，教研员18%，其他对象13%">
+                <strong>42%</strong>
+                <span>小学教师</span>
+              </div>
+              <ul>
+                <li style="--c: #1f73ff"><span>小学教师</span><b>42%</b></li>
+                <li style="--c: #17b6ff"><span>幼儿教师</span><b>27%</b></li>
+                <li style="--c: #ff9b23"><span>教研员</span><b>18%</b></li>
+                <li style="--c: #94a6c2"><span>其他对象</span><b>13%</b></li>
+              </ul>
+            </section>
           </div>
         </div>
 
@@ -340,14 +365,14 @@
           <h2 class="section-title">学员反馈</h2>
           <div class="feedback-window">
             <div class="feedback-track">
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多。</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来。</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好”。</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>案例库特别实用，数学建模、作文批改、幼儿观察都能找到可迁移的思路。</p><span><b>王老师</b> 义乌市实验幼儿园</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专家点评很具体，帮我快速发现课堂融合中的低效环节。</p><span><b>刘老师</b> 重庆市南岸区教师进修学院</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多。</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来。</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
-              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好”。</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多 👍</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来 ✨</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好” 🚀</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>案例库特别实用，数学建模、作文批改、幼儿观察都能找到可迁移的思路 💡</p><span><b>王老师</b> 义乌市实验幼儿园</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专家点评很具体，帮我快速发现课堂融合中的低效环节，改进方向一下清楚了 🎯</p><span><b>刘老师</b> 重庆市南岸区教师进修学院</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>这次研修让我把AI工具真正用进备课和课堂提问，学生参与度比以前高很多 👍</p><span><b>李老师</b> 北京市海淀区实验小学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>从提示词设计到课堂评价都有范例，回到学校就能带着教研组一起试起来 ✨</p><span><b>周老师</b> 上海市徐汇区第三中学</span></article>
+              <article class="feedback-card"><img src="./素材/反馈引号icon.png" alt="" /><p>专题馆的课程路径很清楚，帮助我把AI应用从“会用”推进到“用得好” 🚀</p><span><b>陈老师</b> 广州市越秀区育才学校</span></article>
             </div>
           </div>
         </aside>
@@ -391,6 +416,7 @@
       </div>
     </footer>
 
+    <script src="./data/china-provinces.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
