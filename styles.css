@@ -881,6 +881,16 @@ body.topic-locked {
   border-bottom: 1px solid var(--line);
 }
 
+.news-panel .panel-head {
+  gap: 18px;
+}
+
+.news-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
 .tabs,
 .filters {
   display: flex;
